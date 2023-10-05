@@ -14,7 +14,7 @@ This is a procedural jellyfish created procedurally using Houdini. It consists o
 | Veins | <img width="300" alt="bell" src="./assets/veins.jpg"> |
 | Organs | <img width="300" alt="bell" src="./assets/organs.jpg"> |
 | Arms | <img width="300" alt="bell" src="./assets/arms.jpg"> |
-| Jellyfish | <img width="300" alt="bell" src="./assets/jellyfish.jpg> |
+| Jellyfish | <img width="300" alt="bell" src="./assets/jellyfish.jpg"> |
 
 ## Creating the Jellyfish
 In this section, I will provide a brief breakdown of how each component was crafted.
