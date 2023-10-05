@@ -1,10 +1,8 @@
 # Procedural Jellyfish
 Tongwei Dai (tongweid@seas.upenn.edu)
 
-
+## Short Demo
 https://github.com/dw218192/hw02-jellyfish/assets/31294154/50df846d-de61-4f02-8da9-c0c9f2680d64
-
-
 
 ## Overview
 This is a procedural jellyfish created procedurally using Houdini. It consists of 5 parts shown below. Some parts are animated using cloth simulation, while others are animated using keyframes. The jellyfish is then rendered using the Karma renderer.
