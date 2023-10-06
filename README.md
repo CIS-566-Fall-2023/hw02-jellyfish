@@ -8,7 +8,7 @@
 | Bell | <img width="300" alt="bell" src="./assets/bell.png"> |
 | Arms | <img width="300" alt="bell" src="./assets/arms.png"> |
 | Veins | <img width="300" alt="bell" src="./assets/veins.png"> |
-| Organs | <img width="300" alt="bell" src="./assets/organs.png"> |
+| Organs | <img width="300" alt="bell" src="./assets/Organs.png"> |
 | Tentacles | <img width="300" alt="bell" src="./assets/tentacle.png"> |
 | Jellyfish | <img width="300" alt="bell" src="./assets/jellyfish.png"> |
 
