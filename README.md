@@ -1,12 +1,14 @@
 # Procedural Jellyfish
 
+https://github.com/horo-ursa/hw02-jellyfish/assets/54868517/6c931258-0d7a-4f65-86d0-13b7cc5bdf91
+
+
+
 ## Project Overview
 
-For this project, I created an animated Jellyfish using Houdini
+For this project, I created an animated Jellyfish using Houdini.
 
-<img height="500" alt="Jellyfish" src="assets/render.mp4">
-
----
+Extra: rendering
 
 ## Details
 
