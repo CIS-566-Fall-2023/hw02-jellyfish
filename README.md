@@ -6,15 +6,23 @@ https://github.com/IwakuraRein/CIS-566-hw02-jellyfish/assets/28486541/1c8e53d7-9
 
 ## Bell, Arms, and Veins
 
+![](assets/bell.png)
+![](assets/arms.png)
+![](assets/vein.png)
+
 I followed the tutorials to create the bell, arms, and veins.
 
 ## Tentacles
+
+[!](assets/tentacles.png)
 
 I first created a line node and used a resample node to increase its tessellation. Then I created a point group by selecting the edges of the bell and used a copy-to-point node to layout the tentacles. 
 
 I used the vellum solver to perform hair simulation on the tentacles. Then I used a sweep node to create the meshes along the tentacles.
 
 ## Organs
+
+![](assets/organs.png)
 
 I first created a torus and used the clip node to halve it. Then I used the mountain node to add some noise to the surface and the poly extrude node to create the mesh.
 
