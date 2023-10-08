@@ -2,6 +2,7 @@
 Ruijun(Daniel) Zhong
 
 ## Demo
+Please allow some time for github to load the gif below
  ![](./JellyFilpbook.gif)
  ![](./Render.png)
  ![](./Render2.png)
