@@ -1,80 +1,38 @@
-# Procedural Jellyfish
+# Claire Lu Procedural Jellyfish
 
 ## Project Overview
-In this homework, you'll create a procedural jellyfish using Houdini. This will give you a chance to dig into procedural modeling, as well as some simulation. Here is a breakdown of the different jellyfish parts you'll be putting together:
+For my procedural jellyfish, I decided to create a glowy, shiny gold and white jellyfish.
 
-<img height="500" alt="Jellyfish Parts" src="/assets/JellyfishParts.png">
+I started by creating the bell and the arms of the jellyfish. 
 
----
+I made the bell by using a line node, bending it, and then revolving it to create a hemispherical shape. I then used the mountain node to give it a more organic look, and extruded it to give it some thickness.
 
-Here are some SideFX docs that you might find helpful:
+For the arms, I started with a rectangular grid, added ruffles to it by adding a noise values to the points based on their location on the grid, and then applied a twist to it. I used a cloth constraint to make it look stretchier and matched it to the animation of the bell by using a point deform node.
 
-[Geometry Nodes Documentation](https://www.sidefx.com/docs/houdini/nodes/sop/index.html)
+<img height="200" alt="Jellyfish Parts" src="https://github.com/ClaireL21/hw02-jellyfish/assets/102630261/c64fd87c-bced-4d15-9eb5-923d9f59035d">
 
-[VEX Documentation](https://www.sidefx.com/docs/houdini/vex/functions/index.html)
+<img height="200" alt="Jellyfish Parts" src="https://github.com/ClaireL21/hw02-jellyfish/assets/102630261/495c70cb-644e-4ad3-b1bc-5f677f6cfc6a">
 
-## Bell and Arms
-Follow along to the videos to create the bell and arms of the jellyfish. Although I provide the values I used to create my jellyfish, you're heavily encouraged to play around and customize the setup to your liking! 
-
-[Jellyfish Bell Setup Video](https://www.youtube.com/watch?v=J3X8BB0yNRE)
-
-[Jellyfish Arms Setup Video](https://www.youtube.com/watch?v=A_oNXqx8XH4)
-
-## Veins
-In order to create the veins for the jellyfish, you'll make use of the "Find Shortest Path" node. The Dungeon Corridor example in the Houdini Playground is a helpful reference for using this node. Here is some rough guidance for how to approach making the veins:
-
-Remesh the jellyfish into triangles (otherwise you'll end up with very square looking veins)
-
-<img width="300" alt="Remesh" src="/assets/Remesh.png">
-
-Use the shortest path node to generate veins ([here](https://www.sidefx.com/docs/houdini/nodes/sop/findshortestpath.html) are the docs for the Find Shortest Path node)
-
-<img width="300" alt="ShortestPath" src="/assets/ShortestPath.png">
-
-Smooth out the veins for a more organic look. You might find yourself needing the "resample" and "fuse" nodes in addition to the "smooth" node (and remember, the [docs](https://www.sidefx.com/docs/houdini/nodes/sop/index.html) are a great resource if you're confused about what a node does or how to use it)
-
-<img width="300" alt="ResampleFuseSmooth" src="/assets/ResampleFuseSmooth.png">
-
-Use a "sweep" node to give the veins width
-
-<img width="300" alt="Sweep" src="/assets/Sweep.png">
-
-Lastly, stick the veins to the bell's animation using the "Point Deform" node that we used on the arms. The final result should look something like this:
-
-<img width="300" alt="VeinsGif" src="/assets/VeinsGif.gif">
-
-## Organs
-Next, create organs for your jellyfish. You can approach this any way you'd like! The final result should look something like this:
-
-<img width="300" alt="Organs" src="/assets/Organs.png">
+<img height="200" alt="Jellyfish Parts" src="https://github.com/ClaireL21/hw02-jellyfish/assets/102630261/46f8004c-eb34-400d-9045-2db23012a775">
 
 
-## Tentacles
-When you're working on Houdini projects in the future, you usually won't be able to find tutorials for exactly what you're trying to do. Instead, you'll need to be able to take semi-related tutorials and apply the relevant techniques to your projects. This exercise is designed to give you some experience with that.
+To create the veins, I used the shortest path node. First, I described a set of points on the jellyfish bell to be the start points and another set of points to be the end points. Calculating the shortest paths from each of the endpoints to a subset of the startpoints gave a nice veiny look that worked well for the jellyfish. The most challenging part about using the shortest path node, though, was getting the animation to run smoothly with the bell. At first, when trying to deform the paths to match the surface of the bell, the shortest path node would recalculate paths and the veins would change. I then tried using a timeshift node to freeze the calculations at the first frame - however, this caused the veins to no longer move with the bell. In the end, I found the solution to be using two timeshifts. The first timeshift is for calculating the shortest paths and creating the veins. Then, the second one references the original bell geometry and deforms the veins points based on that. This allowed the veins to move with the bell without recalculating paths!
 
-Your goal is to create tentacles that look like this for your jellyfish:
 
-<img width="300" alt="TentaclesGif" src="/assets/TentaclesGif.gif">
+<img height="200" alt="Jellyfish Parts" src="https://github.com/ClaireL21/hw02-jellyfish/assets/102630261/478d07cc-1050-4fba-b10e-ac925ca78ff9">
 
-[This video](https://www.youtube.com/watch?v=LN4XXaHQkmU) demonstrates how to simulate hairs to create renders like this:
+Next, I created the organs. For this, I created a line, used several bends to make it in the shape I wanted, and then gave it thickness and copied it for a total of four pieces. 
 
-<img width="300" alt="HairRender3" src="/assets/HairRender1.png">
-<img width="300" alt="HairRender2" src="/assets/HairRender2.png">
-<img width="300" alt="HairRender1" src="/assets/HairRender3.png">
+<img height="200" alt="Jellyfish Parts" src="https://github.com/ClaireL21/hw02-jellyfish/assets/102630261/2e284b8b-0f7f-4ea1-a062-33d4c5af4000">
 
-Your task is to watch the video and extract the applicable information to make the tentacles! (also, just a heads up, the second half of the tutorial is all irrelevant rendering stuff in C4D, so you only need to watch the first 12 minutes or so).
 
-## (Optional) Extra Credit
-- Add another part to your jellyfish. This can be something real (ex: crown jellyfish and lions mane jellyfish have some pretty crazy features that might be fun to recreate) or whatever zany alien jellyfish addition you can imagine!
-- Refine one of the existing parts (ex: adding scalloped edges and dents/puckering to the bell of the jellyfish)
-- Render your jellyfish (a good place to start is watching [part 4](https://www.youtube.com/watch?v=1Ph-7ZpN5oY) and [part 5](https://www.youtube.com/watch?v=mCQPDf-bupY) of Entagma's Houdini in 5 Minutes series where they briefly cover rendering basics
-- Add some flair to your scene by adding a background (ex: coral or rock formations)
-## Submission
-- Fork this repository
-- Update your README
-    - Please delete the assignment README text
-    - A description of your project
-    - A video of your animated jellyfish ([video](https://www.youtube.com/watch?v=gXtDd1lPDmc) of how to save a video of your viewport out of Houdini)
-- Create a pull request to this repository
-- Submit your Houdini file to Canvas along with a link to your pull request
-(Don't upload your houdini files to github -- it's a pain to upload big/binary files. Just canvas is fine!)
+Lastly, I created the tentacles. I wanted the tentacles to be attached to the jellyfish along the circumference of the bottom of the bell. I used a torus and a scatter node to create a ring of points from which I could later generate lines. The jellyfish's bell isn't completely circular, though, so the points didn't match up perfectly with the bottom of the node. In order to fix this, I used a ray node to project the points onto the surface of the bell. However, because of the bell's upward-downward animation, the points weren't always projected onto the rim of the bell, so I first deformed the points to move along with the animation of the jellyfish and then used the ray node to project the points. After this, I copied lines to the points to give it more of a tentacle shape, used a hair constraint and vellum solver to help capture the movement of the tentacles, and used a sweep node to give it some thickness.
+
+<img height="200" alt="Jellyfish Parts" src="https://github.com/ClaireL21/hw02-jellyfish/assets/102630261/1aaa3331-5d0e-4f4a-aa4b-46004b3373c9">
+
+<img height="200" alt="Jellyfish Parts" src="https://github.com/ClaireL21/hw02-jellyfish/assets/102630261/d8971adb-294e-49d6-85ea-5d5cec299ed0">
+
+
+## Video Demo
+<video height="500" src="https://github.com/ClaireL21/hw02-jellyfish/assets/102630261/1cf97cc5-831b-4469-b8e6-ed407c43989b">
+
