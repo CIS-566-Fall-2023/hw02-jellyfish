@@ -5,7 +5,7 @@
 <video src="./untitled.mov"> </video>
 ![jellyfish](./untitled.mov)
 
-<iframe id="video" width="560" height="315" src="./untitled.mov" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+<iframe id="video" src="./untitled.mov" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 
 In this project, I made jellyfish that composed of 5 parts as instructed below. For belly and arms, I followed the videos that are provided. 
 
