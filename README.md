@@ -13,15 +13,25 @@ Here are some SideFX docs that you might find helpful:
 
 [VEX Documentation](https://www.sidefx.com/docs/houdini/vex/functions/index.html)
 
-## Bell and Arms
-Follow along to the videos to create the bell and arms of the jellyfish. Although I provide the values I used to create my jellyfish, you're heavily encouraged to play around and customize the setup to your liking! 
+## Bell
 
 [Jellyfish Bell Setup Video](https://www.youtube.com/watch?v=J3X8BB0yNRE)
+1. Draw line, so that can LATER revolve around y-axis.
+2. Add organic deformation using two Bend nodes: one to control the rim and the other for the central main.
+3. Keyframing animation
 
+
+## Bell Arms
 [Jellyfish Arms Setup Video](https://www.youtube.com/watch?v=A_oNXqx8XH4)
 
+1. Vellum constraint node: pre setup of geometry attributes for cloth simulation
+2. Vellum solver node: actual thinking
+
+
 ## Veins
-In order to create the veins for the jellyfish, you'll make use of the "Find Shortest Path" node. The Dungeon Corridor example in the Houdini Playground is a helpful reference for using this node. Here is some rough guidance for how to approach making the veins:
+[Dungeon Corridor - Houdini Playground](https://www.youtube.com/watch?v=K6IGdoc77Nk&list=PLWxLLKXNHPFz13s5Obs0CQ1RWW8mBO0XB&index=11)
+
+"Find Shortest Path" node
 
 Remesh the jellyfish into triangles (otherwise you'll end up with very square looking veins)
 
