@@ -1,80 +1,62 @@
 # Procedural Jellyfish
 
+## Animated Jellyfish
+https://github.com/hansen-yi/hw02-jellyfish/assets/97490525/adea950a-142b-48f8-a575-e4a6310bc4a2
+
+https://github.com/hansen-yi/hw02-jellyfish/assets/97490525/f6f52478-1907-45c3-9ef0-a4b60b971cc9
+
 ## Project Overview
-In this homework, you'll create a procedural jellyfish using Houdini. This will give you a chance to dig into procedural modeling, as well as some simulation. Here is a breakdown of the different jellyfish parts you'll be putting together:
+
+<img width="328" alt="Jellyfish" src="https://github.com/hansen-yi/hw02-jellyfish/assets/97490525/8ccc908f-9c73-423d-8449-627cca3e1629">
+
+The jellyfish is made up of five parts: the Bell, the Arms, the Veins, the Organs, and the Tentacles.
 
 <img height="500" alt="Jellyfish Parts" src="/assets/JellyfishParts.png">
 
----
+## Bell
+<img width="304" alt="Bell" src="https://github.com/hansen-yi/hw02-jellyfish/assets/97490525/2d5f1b89-157f-4ae4-bdcc-6c2ff0e6a7a5">
 
-Here are some SideFX docs that you might find helpful:
+The bell is created using a line as the base, that is then bent into a curve that is revolved to create the general shape of the bell. Finally, noise is adding using a mountain noise to give the bell a more organic look.
 
-[Geometry Nodes Documentation](https://www.sidefx.com/docs/houdini/nodes/sop/index.html)
+## Arms
+<img width="361" alt="Arms+Bell" src="https://github.com/hansen-yi/hw02-jellyfish/assets/97490525/a693bff1-245e-4d22-81cf-8e8857add058">
 
-[VEX Documentation](https://www.sidefx.com/docs/houdini/vex/functions/index.html)
+The arms are created using a grid as a base, that is then modified to have ruffles using a VEXpression. The copy node is used to duplicate the one arm. The movement of the arms is based on a cloth simulation done through Vellum Constraints and Vellum Solver nodes. 
 
-## Bell and Arms
-Follow along to the videos to create the bell and arms of the jellyfish. Although I provide the values I used to create my jellyfish, you're heavily encouraged to play around and customize the setup to your liking! 
-
-[Jellyfish Bell Setup Video](https://www.youtube.com/watch?v=J3X8BB0yNRE)
-
-[Jellyfish Arms Setup Video](https://www.youtube.com/watch?v=A_oNXqx8XH4)
+<img width="242" alt="Arms" src="https://github.com/hansen-yi/hw02-jellyfish/assets/97490525/b4df5790-c78e-4ccb-b746-1449a0da5a81">
 
 ## Veins
-In order to create the veins for the jellyfish, you'll make use of the "Find Shortest Path" node. The Dungeon Corridor example in the Houdini Playground is a helpful reference for using this node. Here is some rough guidance for how to approach making the veins:
+<img width="304" alt="Veins+Bell" src="https://github.com/hansen-yi/hw02-jellyfish/assets/97490525/5f9c2de6-e577-4b43-812d-a433d1d265f6">
 
-Remesh the jellyfish into triangles (otherwise you'll end up with very square looking veins)
+The veins are created by selecting 2 groups of points from the bell of the jellyfish and then it utilizes these two groups in the Find Shortetst Path node to create the veins. After the shortest paths are created, they are smoothed out using Resample, Fuse, and Smooth nodes. Then the veins are given width using a sweep node. Finally, to ensure that the deformation of the veins matches the bell of the jellyfish a point deform node is utilized.
 
-<img width="300" alt="Remesh" src="/assets/Remesh.png">
-
-Use the shortest path node to generate veins ([here](https://www.sidefx.com/docs/houdini/nodes/sop/findshortestpath.html) are the docs for the Find Shortest Path node)
-
-<img width="300" alt="ShortestPath" src="/assets/ShortestPath.png">
-
-Smooth out the veins for a more organic look. You might find yourself needing the "resample" and "fuse" nodes in addition to the "smooth" node (and remember, the [docs](https://www.sidefx.com/docs/houdini/nodes/sop/index.html) are a great resource if you're confused about what a node does or how to use it)
-
-<img width="300" alt="ResampleFuseSmooth" src="/assets/ResampleFuseSmooth.png">
-
-Use a "sweep" node to give the veins width
-
-<img width="300" alt="Sweep" src="/assets/Sweep.png">
-
-Lastly, stick the veins to the bell's animation using the "Point Deform" node that we used on the arms. The final result should look something like this:
-
-<img width="300" alt="VeinsGif" src="/assets/VeinsGif.gif">
+<img width="284" alt="Veins" src="https://github.com/hansen-yi/hw02-jellyfish/assets/97490525/7f613fc6-0c4d-4bd2-a0c1-fbe4d0c0fceb">
 
 ## Organs
-Next, create organs for your jellyfish. You can approach this any way you'd like! The final result should look something like this:
+<img width="287" alt="Organs+Bell" src="https://github.com/hansen-yi/hw02-jellyfish/assets/97490525/d2e665ef-af7e-4141-b9ea-9bac5b2c6568">
 
-<img width="300" alt="Organs" src="/assets/Organs.png">
+The organs are created by using a tube as the base for one, filling it to add rounded caps, and then bending it to create the general shape of one organ. Noise is then added using a mountain node to make the shape more organic. Afterwards, the copy node is utilized to create 4 organs resulting in something like this:
 
+<img width="288" alt="Organs" src="https://github.com/hansen-yi/hw02-jellyfish/assets/97490525/e0784f75-dae6-4992-a192-50dfd849cb27">
 
 ## Tentacles
-When you're working on Houdini projects in the future, you usually won't be able to find tutorials for exactly what you're trying to do. Instead, you'll need to be able to take semi-related tutorials and apply the relevant techniques to your projects. This exercise is designed to give you some experience with that.
 
-Your goal is to create tentacles that look like this for your jellyfish:
+<img width="323" alt="Tentacles + Bell" src="https://github.com/hansen-yi/hw02-jellyfish/assets/97490525/10b1c1bd-4613-48e3-8d19-72db7561d21d">
 
-<img width="300" alt="TentaclesGif" src="/assets/TentaclesGif.gif">
+The tentacles are created using a line as the base, that is then copied onto the points of the "edge" of the bell. These lines are then simulated as hair using the Vellum Hair and Vellum Solver nodes. The movement of the tentacles is affected by Pop Attract and Pop Force nodes being added to the output force of the Vellum Solver.
 
-[This video](https://www.youtube.com/watch?v=LN4XXaHQkmU) demonstrates how to simulate hairs to create renders like this:
+<img width="303" alt="Tentacles" src="https://github.com/hansen-yi/hw02-jellyfish/assets/97490525/bd8d2b71-7950-4494-81a6-4dd373d69e77">
 
-<img width="300" alt="HairRender3" src="/assets/HairRender1.png">
-<img width="300" alt="HairRender2" src="/assets/HairRender2.png">
-<img width="300" alt="HairRender1" src="/assets/HairRender3.png">
+## Render
+![jellyfishRender1](https://github.com/hansen-yi/hw02-jellyfish/assets/97490525/b57d96fb-598b-4686-b74a-db5e57864866)
 
-Your task is to watch the video and extract the applicable information to make the tentacles! (also, just a heads up, the second half of the tutorial is all irrelevant rendering stuff in C4D, so you only need to watch the first 12 minutes or so).
-
-## (Optional) Extra Credit
-- Add another part to your jellyfish. This can be something real (ex: crown jellyfish and lions mane jellyfish have some pretty crazy features that might be fun to recreate) or whatever zany alien jellyfish addition you can imagine!
-- Refine one of the existing parts (ex: adding scalloped edges and dents/puckering to the bell of the jellyfish)
-- Render your jellyfish (a good place to start is watching [part 4](https://www.youtube.com/watch?v=1Ph-7ZpN5oY) and [part 5](https://www.youtube.com/watch?v=mCQPDf-bupY) of Entagma's Houdini in 5 Minutes series where they briefly cover rendering basics
-- Add some flair to your scene by adding a background (ex: coral or rock formations)
-## Submission
-- Fork this repository
-- Update your README
-    - Please delete the assignment README text
-    - A description of your project
-    - A video of your animated jellyfish ([video](https://www.youtube.com/watch?v=gXtDd1lPDmc) of how to save a video of your viewport out of Houdini)
-- Create a pull request to this repository
-- Submit your Houdini file to Canvas along with a link to your pull request
-(Don't upload your houdini files to github -- it's a pain to upload big/binary files. Just canvas is fine!)
+## References
+- Elyssa Choudini Tutorials
+    - [Houdini PLayground](https://youtube.com/playlist?list=PLWxLLKXNHPFz13s5Obs0CQ1RWW8mBO0XB&si=0poQWdqSfBQvE7Qp)
+    - [Bell](https://www.youtube.com/watch?v=J3X8BB0yNRE)
+    - [Arms](https://www.youtube.com/watch?v=A_oNXqx8XH4)
+    - [Exporting Videos](https://www.youtube.com/watch?v=gXtDd1lPDmc)
+- [Hair Simulation](https://www.youtube.com/watch?v=LN4XXaHQkmU) 
+- Rendering Tutorials
+    - [Houdini in 5 Minutes 04](https://www.youtube.com/watch?v=1Ph-7ZpN5oY)
+    - [Houdini in 5 Minutes 05](https://www.youtube.com/watch?v=mCQPDf-bupY)
