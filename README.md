@@ -1,6 +1,7 @@
 # Procedural Jellyfish - Xiaoxiao(Crystal) Zou
 
 ## Project Overview
+![jellyfish](./untitled.gif)
 
 In this project, I made jellyfish that composed of 5 parts as instructed below. For belly and arms, I followed the videos that are provided. 
 
