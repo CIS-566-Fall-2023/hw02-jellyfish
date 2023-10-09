@@ -4,7 +4,7 @@
 
 In this project, I created a procedural jellyfish using Houdini, using procedural modeling and simulation. 
 
-[![Jelly Fish Demo]([https://youtu.be/vt5fpE0bzSY](https://youtu.be/mr_SnPgcRcI))
+[![Jelly Fish Demo](https://youtu.be/mr_SnPgcRcI)
 
 ---
 
