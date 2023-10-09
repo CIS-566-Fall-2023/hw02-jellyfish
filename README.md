@@ -9,8 +9,10 @@ The goal of the project was to create an animated jellyfish using procedural mod
 The jellyfish contains 5 main parts: the bell, the arms, inner organs, veins, and tentacles.
 <br>
 <br>
+
 ![](fulljelly.png)
 ![](closeup.png)
+
 <br>
 
 ## Bell
