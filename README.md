@@ -3,6 +3,7 @@
 ## Project Overview
 
 <video src="./untitled.mov"> </video>
+![jellyfish](./untitled.mov)
 
 In this project, I made jellyfish that composed of 5 parts as instructed below. For belly and arms, I followed the videos that are provided. 
 
