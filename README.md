@@ -11,6 +11,8 @@ For Organs, I just used bezier curve (resample with points on curve ) with toget
 
 For Tentacles, I first generate some points at bottom of belly, then followed from hair instruction to generate some hairs. I still add small gravity since tentacles have to fall down. Then, I sweep the lines with boxes to generate mesh. 
 
+For rendering, I added some opacity and color to the jellyfish in order to let organs to show up. 
+
 <img height="500" alt="Jellyfish Parts" src="./assets/JellyfishParts.png">
 
 [Jellyfish Bell Setup Video](https://www.youtube.com/watch?v=J3X8BB0yNRE)
