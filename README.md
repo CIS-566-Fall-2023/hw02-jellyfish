@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-<video src="untitled.mov" controls="controls" style="max-width: 730px;"> </video>
+<video src="untitled.mov" controls="controls"> </video>
 
 In this project, I made jellyfish that composed of 5 parts as instructed below. For belly and arms, I followed the videos that are provided. 
 
