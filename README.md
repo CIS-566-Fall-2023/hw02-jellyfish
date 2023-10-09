@@ -1,6 +1,7 @@
 # Procedural Jellyfish
 
 ## Project Overview
+
 In this project, I created a procedural jellyfish using Houdini, using procedural modeling and simulation. 
 ---
 
