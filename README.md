@@ -3,7 +3,7 @@
 The goal of the project was to create an animated jellyfish using procedural modeling and simulation in Houdini. This was a great first introduction to Houdini and I enjoyed taking the time to discover new nodes and get used to the Houdini workflow.
 <br>
 
-https://github.com/CIIINDYXUU/hw02-jellyfish/assets/88256581/584e7408-2569-47c2-8753-386cb43721f8
+![](JELLYFISH.mov)
 
 <br>
 The jellyfish contains 5 main parts: the bell, the arms, inner organs, veins, and tentacles.
