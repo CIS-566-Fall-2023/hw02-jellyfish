@@ -3,6 +3,9 @@
 ## Project Overview
 
 In this project, I created a procedural jellyfish using Houdini, using procedural modeling and simulation. 
+
+[![Jelly Fish Demo](https://github.com/kyraSclark/hw02-jellyfish/assets/60115638/498fc3cc-83ac-4cd1-8541-8db57fe7c55f)]([https://youtu.be/vt5fpE0bzSY](https://youtu.be/mr_SnPgcRcI))
+
 ---
 
 ## Bell
@@ -15,7 +18,7 @@ Next, I created the veins across the jellyfish's bell. This required that I reme
 
 ![Veins](https://github.com/kyraSclark/hw02-jellyfish/assets/60115638/14c8ba49-d726-4b7e-9212-9cc8436ed4c4)
 
-## Puckering Bumps
+## Puckering Bumps (extra credit)
 For a more interesting shape, I added some bumps to the bell to give the shape some puckering. I began with a transformed sphere to get the shape that I wanted, and rotated it such that the normal aligned. Then, I used the remeshed bell again to collect a group of random points that existed within a bounding box around the bell, exluding the flairing bottom of the bell. Then, I copied the sphere shape to the grouped points on the bell. 
 
 ![Bumps](https://github.com/kyraSclark/hw02-jellyfish/assets/60115638/d22c826f-025e-4a5c-bf70-d147238a47c9)
@@ -39,18 +42,3 @@ Finally, for the tentacles, I started with a simple line. Then I selected points
 To finish the project, I added a material to all the different parts to give it a transparent or pink color. Then, I animated the model. I used a null node, that I called the Controller to house the keyframes for the jellyfish. I copied selected properties of the fish that I wanted to animate. In this project, I animated the jellyfish's Y Position to make it move up and down, controlled the bend of the bell as well as the bend of the tip of the bell, and I animated the noise of the organs to make them move and fluctuate slightly. Finally, I merges all the pieces together. 
 
 ![Final Merge](https://github.com/kyraSclark/hw02-jellyfish/assets/60115638/498fc3cc-83ac-4cd1-8541-8db57fe7c55f)
-
-## (Optional) Extra Credit
-- Add another part to your jellyfish. This can be something real (ex: crown jellyfish and lions mane jellyfish have some pretty crazy features that might be fun to recreate) or whatever zany alien jellyfish addition you can imagine!
-- Refine one of the existing parts (ex: adding scalloped edges and dents/puckering to the bell of the jellyfish)
-- Render your jellyfish (a good place to start is watching [part 4](https://www.youtube.com/watch?v=1Ph-7ZpN5oY) and [part 5](https://www.youtube.com/watch?v=mCQPDf-bupY) of Entagma's Houdini in 5 Minutes series where they briefly cover rendering basics
-- Add some flair to your scene by adding a background (ex: coral or rock formations)
-## Submission
-- Fork this repository
-- Update your README
-    - Please delete the assignment README text
-    - A description of your project
-    - A video of your animated jellyfish ([video](https://www.youtube.com/watch?v=gXtDd1lPDmc) of how to save a video of your viewport out of Houdini)
-- Create a pull request to this repository
-- Submit your Houdini file to Canvas along with a link to your pull request
-(Don't upload your houdini files to github -- it's a pain to upload big/binary files. Just canvas is fine!)
