@@ -36,7 +36,7 @@ I first created the base wing by bending a primitive circle. After remeshing it,
 
 **Jellyfish Parallel**: The wings follow the technique of the veins, as I used remesh, shortest path, and smooth nodes to create the sprawling details on the wing. 
 
-<img width="500" alt="wings" src="/wings.png">
+<img width="400" alt="wings" src="/wings.png">
 
 ## Hair
 The bee has hair on its head, body, abdomen, and legs. The general method for generating each is the same: calculate normals for the mesh, scatter points on the mesh, copy a hair mesh (bent, polywired line) to each of the points. 
@@ -44,8 +44,8 @@ The bee's abdomen hair has a slight detail: the bee's abdomen has more hair clos
 
 **Jellyfish Parallel**: The jellyfish tentacles similarly use lines that copy to points on the mesh.  
 
-<img width="300" alt="HairRender" src="/hairpoints.png">
-<img width="300" alt="HairRender1" src="/hair.png">
+<img width="400" alt="HairRender" src="/hairpoints.png">
+<img width="400" alt="HairRender1" src="/hair.png">
 
 ## Animation (just the wings-for now) 
 I added a simple animation for the flapping of the wings. 
