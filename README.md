@@ -2,11 +2,9 @@
 
 ## Jellyfish
 
-gif
-<img width="300" alt="TentaclesGif" src="g.gif">
+<img width="500" alt="TentaclesGif" src="g.gif">
 
-image
-<img width="300" alt="TentaclesGif" src="image.png">
+<img width="500" alt="TentaclesGif" src="image.png">
 
 
 ## Overview
