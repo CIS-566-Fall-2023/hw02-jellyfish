@@ -1,80 +1,77 @@
 # Procedural Jellyfish
 
-## Project Overview
-In this homework, you'll create a procedural jellyfish using Houdini. This will give you a chance to dig into procedural modeling, as well as some simulation. Here is a breakdown of the different jellyfish parts you'll be putting together:
+https://github.com/sherryli02/hw02-jellyfish/assets/97941858/13abc34a-2956-4f7d-ae6a-cd454ae55389
 
-<img height="500" alt="Jellyfish Parts" src="/assets/JellyfishParts.png">
+Something I particularly wanted to achieve with my jellyfish was not only have many detailed parameters for an artist to be able to fine-tune, but also the ability to quickly generate endless random jellyfish variations. I achieved this by adding a “Randomize” toggle to my controller — if the user checks it, they can scrub through a seed that randomizes dozens of parameters independently!
 
----
+https://github.com/sherryli02/hw02-jellyfish/assets/97941858/b4e9bafa-61ce-494b-ad20-c303e8e33855
 
-Here are some SideFX docs that you might find helpful:
+I really enjoyed this project. During my internship last summer, I used Houdini for the first time, which had been exciting but also overwhelming — I’d never worked with a node-based program before, and there was a lot to wrap my head around. This project gave me some more time to flesh out that knowledge, and I really appreciated the opportunity to learn without feeling entirely lost.
 
-[Geometry Nodes Documentation](https://www.sidefx.com/docs/houdini/nodes/sop/index.html)
+## Reference
 
-[VEX Documentation](https://www.sidefx.com/docs/houdini/vex/functions/index.html)
+<img src="reference.png" width="40%">
 
-## Bell and Arms
-Follow along to the videos to create the bell and arms of the jellyfish. Although I provide the values I used to create my jellyfish, you're heavily encouraged to play around and customize the setup to your liking! 
+Looking at reference helped me get a feel for what to prioritize. I noticed that there was quite a bit of variety across jellyfish species, so I looked for elements whose variation was within a sizeable enough scope to procedurally reproduce. I also looked at jellyfish swimming videos to guide my final animation.
 
-[Jellyfish Bell Setup Video](https://www.youtube.com/watch?v=J3X8BB0yNRE)
+## Bell
 
-[Jellyfish Arms Setup Video](https://www.youtube.com/watch?v=A_oNXqx8XH4)
+<img src="bell.png" width="40%">
+
+The main shape of the bell was created by revolving a curve around the y-axis. The user can transform the shape of the bell by controlling the bends of the original curve or by using a taper/squish node, and can also control its overall orientation. 
+
+By copying the original curve and using a distancefrom node with some Vex to displace points in the x and z directions, I added puckered scalloped edges to the bell of the jellyfish. 
+
+From reference, I observed that jellyfish bells seemed to have both an outer transulcent hood and a more opaque interior wall. Thus, I duplicated and transformed the bell with Vex to get a non-extruded and shorter version of the bell. This helped create a more realistic appearance in the render.
+
+## Bell Stripes
+
+<img src="stripes.png" width="40%">
+
+My initial approach was to procedurally generate a map that I could pass into the material shader for the bell using the Cd attribute. After some time I pivoted to modelling the stripes instead, an easier approach.
+
+From observing references, I observed that there was a lot of variation in the stripes on different jellyfish: some widened in the middle, and others tapered off at the end. Thus, I used a sweep node to create the base shape to allow the shapes of the stripes to be totally controllable. To have the stripes perfectly emulate the shape of the bell, I extruded them outwards and used a boolean intersect. I also added some noise to their positions and displaced them such that the stripes would be placed right beneath the skin of the bell.
+
+## Bell Spots
+
+<img src="spots.png" width="40%">
+
+I generated spots by scattering points across the bell of the jellyfish, using Vex to randomly vary their sizes and add noise to their positions, using more Vex to ensure less spots are generated near the bottom of the bell, and copying a round sphereish shape to the points.
 
 ## Veins
-In order to create the veins for the jellyfish, you'll make use of the "Find Shortest Path" node. The Dungeon Corridor example in the Houdini Playground is a helpful reference for using this node. Here is some rough guidance for how to approach making the veins:
 
-Remesh the jellyfish into triangles (otherwise you'll end up with very square looking veins)
+<img src="veins.png" width="40%">
 
-<img width="300" alt="Remesh" src="/assets/Remesh.png">
-
-Use the shortest path node to generate veins ([here](https://www.sidefx.com/docs/houdini/nodes/sop/findshortestpath.html) are the docs for the Find Shortest Path node)
-
-<img width="300" alt="ShortestPath" src="/assets/ShortestPath.png">
-
-Smooth out the veins for a more organic look. You might find yourself needing the "resample" and "fuse" nodes in addition to the "smooth" node (and remember, the [docs](https://www.sidefx.com/docs/houdini/nodes/sop/index.html) are a great resource if you're confused about what a node does or how to use it)
-
-<img width="300" alt="ResampleFuseSmooth" src="/assets/ResampleFuseSmooth.png">
-
-Use a "sweep" node to give the veins width
-
-<img width="300" alt="Sweep" src="/assets/Sweep.png">
-
-Lastly, stick the veins to the bell's animation using the "Point Deform" node that we used on the arms. The final result should look something like this:
-
-<img width="300" alt="VeinsGif" src="/assets/VeinsGif.gif">
+Using Vex, I isolated points near the top of the bell and points near the bottom of the bell, and created lines between them using cost and findshortestpath nodes. I also wrote more Vex to have the tops and bottoms of the veins be displaced towards the center of the bell so that we’d get a fading effect in the render instead of having the veins cut off abruptly.
 
 ## Organs
-Next, create organs for your jellyfish. You can approach this any way you'd like! The final result should look something like this:
 
-<img width="300" alt="Organs" src="/assets/Organs.png">
+<img src="organs.png" width="40%">
 
+I used a torus, box, and and boolean subtract node to get the main U-shape. I then transformed it, copied it 3 times, and applied noise.
+
+## Arms
+
+<img src="arms.png" width="40%">
+
+Using line, bend, and merge nodes, I create a sort of rounded plane to emulate the shape of an arm. I bent and mirrored the plane to get an indented V-shape. Using sin functions in Vex, I displaced the positions of edges of the arm in a ruffle-like manner. I then copied them, added noise, and put them through a cloth vellum simulation. 
 
 ## Tentacles
-When you're working on Houdini projects in the future, you usually won't be able to find tutorials for exactly what you're trying to do. Instead, you'll need to be able to take semi-related tutorials and apply the relevant techniques to your projects. This exercise is designed to give you some experience with that.
 
-Your goal is to create tentacles that look like this for your jellyfish:
+<img src="tentacles.png" width="40%">
 
-<img width="300" alt="TentaclesGif" src="/assets/TentaclesGif.gif">
+By using a group node, I isolated the edges at the bottom of the bell, and then used a grouppromote to convert the edges to points. I then used a pointgenerate node to control the number of points. Then I copied a line to each point, added noise through Vex, and ran them through a hair vellum simulation. 
 
-[This video](https://www.youtube.com/watch?v=LN4XXaHQkmU) demonstrates how to simulate hairs to create renders like this:
+## Controller
 
-<img width="300" alt="HairRender3" src="/assets/HairRender1.png">
-<img width="300" alt="HairRender2" src="/assets/HairRender2.png">
-<img width="300" alt="HairRender1" src="/assets/HairRender3.png">
+See the second video! I connected relative references across over 20 parameters to give the user an intuitive customization interface, and defined value ranges for each parameter so that the user can get a nice-looking jellyfish no matter what.
 
-Your task is to watch the video and extract the applicable information to make the tentacles! (also, just a heads up, the second half of the tutorial is all irrelevant rendering stuff in C4D, so you only need to watch the first 12 minutes or so).
+The user can toggle Randomize to have their custom parameters be overwritten by pseudo-random values based on the seed. Infinite random jellyfish can be generated, and each of them are unique. In order to have the seed independently randomize each parameter within my desired ranges, for each parameter I multiplied rand(seed) by a unique decimal and used the fit function. 
 
-## (Optional) Extra Credit
-- Add another part to your jellyfish. This can be something real (ex: crown jellyfish and lions mane jellyfish have some pretty crazy features that might be fun to recreate) or whatever zany alien jellyfish addition you can imagine!
-- Refine one of the existing parts (ex: adding scalloped edges and dents/puckering to the bell of the jellyfish)
-- Render your jellyfish (a good place to start is watching [part 4](https://www.youtube.com/watch?v=1Ph-7ZpN5oY) and [part 5](https://www.youtube.com/watch?v=mCQPDf-bupY) of Entagma's Houdini in 5 Minutes series where they briefly cover rendering basics
-- Add some flair to your scene by adding a background (ex: coral or rock formations)
-## Submission
-- Fork this repository
-- Update your README
-    - Please delete the assignment README text
-    - A description of your project
-    - A video of your animated jellyfish ([video](https://www.youtube.com/watch?v=gXtDd1lPDmc) of how to save a video of your viewport out of Houdini)
-- Create a pull request to this repository
-- Submit your Houdini file to Canvas along with a link to your pull request
-(Don't upload your houdini files to github -- it's a pain to upload big/binary files. Just canvas is fine!)
+Spots, stripes, and veins are generated with a 30% chance each, and never together; from reference images, it seemed that most jellyfish tended to visibly have only one of them at a time. 
+
+## Shading
+
+I spent a lot of time adjusting the shaders to get the look I wanted; each part of the jellyfish is shaded separately. The Fake Caustics option turned to to be very helpful to get that translucent “jelly”-like material. I played around with plugging a fresnel node into my shader, which was promising but raised the render time too much to be incorporated.
+
+Something I want to expand on more in the future is figure out how to bring in more procedural shading to create noise, gradients, and patterns like the stripes. From research online it looks possible through VOPs!
