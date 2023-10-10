@@ -4,6 +4,12 @@
 
 - This is an animated jellyfish created using Houdini nodes.
 
+
+
+https://github.com/HummaWhite/CIS566-hw02-jellyfish/assets/48054481/357cb307-c17c-466d-851b-913871934c2d
+
+
+
 ## Bell and Arms
 
 ![](./body.png)
