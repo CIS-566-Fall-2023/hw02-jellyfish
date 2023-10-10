@@ -3,10 +3,10 @@
 ## Jellyfish
 
 gif
-<img width="300" alt="TentaclesGif" src="/assets/g.gif">
+<img width="300" alt="TentaclesGif" src="g.gif">
 
 image
-<img width="300" alt="TentaclesGif" src="/assets/image.png">
+<img width="300" alt="TentaclesGif" src="image.png">
 
 
 ## Overview
