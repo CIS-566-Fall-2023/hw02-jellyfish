@@ -1,5 +1,17 @@
 # Procedural Jellyfish
 
+## Result
+![lavaball](https://github.com/LichengCAO/hw02-jellyfish/assets/81556019/308a36d3-36d8-4801-a5b4-d6acb5847fb6)
+
+### Implementation
+|Image| Method|
+|:---:|:-----:|
+| ![bell](https://github.com/LichengCAO/hw02-jellyfish/assets/81556019/d59e5d2a-7f0b-4226-9709-3c015349816d)| I follow the [video](https://www.youtube.com/watch?v=J3X8BB0yNRE) to create the bell of the jellyfish, and add some animation|
+|![arm](https://github.com/LichengCAO/hw02-jellyfish/assets/81556019/2cc106fc-d12e-4aab-a6a8-1d2ae1355ae2)| For the arms, I used vellumconstraint node to simulate the cloth material following the [video](https://www.youtube.com/watch?v=A_oNXqx8XH4).|
+| ![veins](https://github.com/LichengCAO/hw02-jellyfish/assets/81556019/1b1b77c3-96c4-49c9-b168-d319e5cbd3ed)| Constructing veins is a bit of tricky, I used the output of the timeshift node to remesh the bell mesh, and then use shortestpath node to connect points on the bell to get the veins|
+|   ![organ](https://github.com/LichengCAO/hw02-jellyfish/assets/81556019/34cbc2c0-b8c0-42d5-a226-611482142a1b)| I used curve bezier tool to create a curve and then apply sweep node to it to create a basic organ, and then copy it to make the organs of the jellyfish|
+|  ![tentacle](https://github.com/LichengCAO/hw02-jellyfish/assets/81556019/72dc3145-a90e-4c8d-ac22-afa94e760aba)| I followed [video](https://www.youtube.com/watch?v=LN4XXaHQkmU) to create a basic tentacle for the jellyfish|
+
 ## Project Overview
 In this homework, you'll create a procedural jellyfish using Houdini. This will give you a chance to dig into procedural modeling, as well as some simulation. Here is a breakdown of the different jellyfish parts you'll be putting together:
 
