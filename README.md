@@ -3,9 +3,7 @@
 __Important note: I will be updating this README.md with more in depth analysis upon the morrow.__
 
 ## Project Overview
-This jellyfish project was created for my Procedural Graphics Course. As I still plan to update this README.md and to a further extent my project, I will simply leave the README.md currently with a video of my current jellyfish. 
-
-## Video of procedural jellyfish
+This jellyfish project was created for my Procedural Graphics Course. As I still plan to update this README.md and to a further extent my project, I will simply leave the README.md with the screenshots and descriptions, and have the video be up for views in the project folder itself. 
 
 Just in case the video does not show up, I have a series of screenshots that I took for some in progress shots of my work.
 
