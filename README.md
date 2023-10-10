@@ -12,12 +12,12 @@ Let's get into the breakdown:
 ## Head and Body
 I began with primitive spheres and added noise to make the shape more organic. 
 
-<img height="500" alt="headbody" src="/head_body.png">
+<img height="400" alt="headbody" src="/head_body.png">
 
 ## Abdomen 
 Working off of Houdini Playground techniques, I used a for-loop to create the bee abdomen. First, I created the shape of one section of the abdomen by modifying a torus. I then used Houdini's loop nodes to duplicate the shape and stack them on top of each other, creating the full abdomen. The overall structure was created by bending and tapering the duplicated toruses. 
 
-<img height="500" alt="butt" src="/bee_butt.png">
+<img height="400" alt="butt" src="/bee_butt.png">
 
 **Jellyfish Parallel**: I used Elyssa's bell technique to create the bee head and body, including bend and mountain nodes. 
 
@@ -42,10 +42,10 @@ I first created the base wing by bending a primitive circle. After remeshing it,
 The bee has hair on its head, body, abdomen, and legs. The general method for generating each is the same: calculate normals for the mesh, scatter points on the mesh, copy a hair mesh (bent, polywired line) to each of the points. 
 The bee's abdomen hair has a slight detail: the bee's abdomen has more hair closer to the body, and fewer hairs on the stinger side. This was done using a distance to geometry node, in which points are more likely to be scattered on the parts of the mesh that are closer to the bee's body. 
 
+**Jellyfish Parallel**: The jellyfish tentacles similarly use lines that copy to points on the mesh.  
+
 <img width="300" alt="HairRender" src="/hairpoints.png">
 <img width="300" alt="HairRender1" src="/hair.png">
-
-**Jellyfish Parallel**: The jellyfish tentacles similarly use lines that copy to points on the mesh.  
 
 ## Animation (just the wings-for now) 
 I added a simple animation for the flapping of the wings. 
