@@ -1,7 +1,7 @@
 # Procedural Jellyfish
 
 ## Jellyfish
-
+GIF & Image
 <img width="500" alt="TentaclesGif" src="g.gif">
 
 <img width="500" alt="TentaclesGif" src="image.png">
