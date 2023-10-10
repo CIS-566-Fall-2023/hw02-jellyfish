@@ -6,8 +6,9 @@ This assignment was my first big foray into Houdini's simulations and it was a t
 
 Once I had the jellyfish created, I set up two different rendering styles to see the Jellyfish in two different lights. One was a realistic PBR render and another was a toon-like shading.
 
-## Video Showcase - Stylized Render
-![stylizedJelly720](https://github.com/dinethmeegoda/procedural-jellyfish/assets/35506196/cc715dea-3986-41b0-b253-0ba970509bb6)
+## Video Showcase - Stylized Render (Low QUality to Make it Fit in Github Readme)
+![stylizedJelly720](https://github.com/dinethmeegoda/procedural-jellyfish/assets/35506196/9034357b-0b5e-4ac6-b286-ba33d0e86c13)
+
 
 ## Realistic Render
 ![jellyfish karma1 0001](https://github.com/dinethmeegoda/procedural-jellyfish/assets/35506196/4f38f191-fe0c-46c8-b3a3-ac313fe457ef)
