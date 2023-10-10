@@ -1,5 +1,8 @@
 # Procedural Jellyfish
-<img width="1000" alt="FinalModel" src="/assets/final_bottom_view.png">
+<img width="1000" alt="FinalModel1" src="/assets/final_bottom_view.png">
+<img width="1000" alt="FinalModel2" src="/assets/final_top_view.png">
+
+(More animation and rendering to come)
 
 ## Project Overview
 I created a procedural jellyfish using Houdini. The focus of this project is to dig into procedural modeling, as well as some physical simulation. Below is a breakdown of how I implemented the different jellyfish parts using node network.
@@ -14,6 +17,8 @@ I created a procedural jellyfish using Houdini. The focus of this project is to 
 
 
 ## Bell Arms
+<img width="1000" alt="Arms" src="/assets/arms.png">
+
 [Jellyfish Arms Setup Video](https://www.youtube.com/watch?v=A_oNXqx8XH4)
 
 1. Vellum constraint node: pre setup of geometry attributes for cloth simulation
@@ -34,6 +39,7 @@ Reference: [Dungeon Corridor - Houdini Playground](https://www.youtube.com/watch
 6. Lastly, stick the veins to the bell's animation using the "Point Deform" node that I used on the arms. 
 
 ## Organs
+<img width="1000" alt="Organs" src="/assets/organs-basic.png">
 
 1. Draw a Bezier curve, and use sweep node to create a worm-shaped mesh.
 2. Rotate and duplicate the base organ.
@@ -41,6 +47,8 @@ Reference: [Dungeon Corridor - Houdini Playground](https://www.youtube.com/watch
 
 
 ## Tentacles
+<img width="1000" alt="Tentacles" src="/assets/tentacles-copytopoints.png">
+
 Reference: [This video](https://www.youtube.com/watch?v=LN4XXaHQkmU) demonstrates how to simulate hairs.
 
 1. Extract the rim points of the bell.
@@ -50,4 +58,4 @@ Reference: [This video](https://www.youtube.com/watch?v=LN4XXaHQkmU) demonstrate
 ### Bloopers
 Saggy arms
 
-<img width="1000" alt="SaggyArms" src="/assets/arms-saggy-cloth-simualtion.png">
+<img width="1000" alt="SaggyArms" src="/assets/arms-saggy-cloth-simulation.png">
