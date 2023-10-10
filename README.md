@@ -1,12 +1,15 @@
 # Procedural Jellyfish
 
 ## Project Overview
-A procedural jellyfish using Houdini.
+A procedural Jellyfish using Houdini.
 
-![]()
+## Outcome
+![](/assets/jellyfish.gif)
+
+Thanks for the beautiful [Underwater Environment](https://www.deviantart.com/namtaar/art/Underwater-Hdri-805776729?ga_submit_new=10%3A1563205557) and amazing [Backgournd Image](https://4kwallpapers.com/photography/underwater-sun-rays-ocean-hawaii-5k-8k-8301.html)!
 
 ## Components
-This Jellyfish consists of the bell, arms, venins, tentacles, and organs
+This Jellyfish consists of the [Bell](#bell), [Arms](#arms), [Venins](#veins), [Tentacles](#tentacles), and [organs](#organs).
 
 ### Bell
 [Jellyfish Bell Setup Video](https://www.youtube.com/watch?v=J3X8BB0yNRE)
