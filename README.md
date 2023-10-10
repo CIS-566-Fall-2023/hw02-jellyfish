@@ -28,7 +28,7 @@ I then used Houdini's loop nodes to duplicate the shape and stack them on top of
 ## Legs
 The legs were created using a combination of VEX and geometric modeling (oops). To get the shape of the first two segments of the legs, I ended up modifying the vertices of a tube. 
 
-However, I did use VEX to create the more jagged shape of the legs' bottom section. I tried replicating a sawtooth function in VEX to create the shape of the leg, before revolving it to make it three-dimensional. 
+However, I did use VEX to create the more jagged shape of the legs' bottom section. I tried replicating a sawtooth function in VEX to create the shape of the leg, before revolving it to make it three-dimensional. I don't think this is super observable because I ended up subdividing the entirety of the legs to make them smoother, so retrospectively, I would have separated the bottom part of the leg and merged at the end. 
 
 The legs were then mirrored and duplicated, with slight variations between the front, middle, and hind legs. 
 
