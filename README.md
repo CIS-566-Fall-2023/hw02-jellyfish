@@ -46,6 +46,5 @@ For the tentacles, I made _group node_ of the bottommost points on the bell and 
 ![](tentacles.png)
   
 ## Extra Credit
-- added scalloped edges to the bell
-- WIP (maybe I'll get it done by the deadline maybe I won't!): create a background with procedurally generated seaweed and coral
-- WIP: create a render of the jellyfish
+I added some scalloped edges to the bell to get the desired look.
+In the future, when I have time to revisit this project, I would love to create a background with procedurally generated seaweed and coral as well as render the jellyfish!
