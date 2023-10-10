@@ -10,12 +10,16 @@ Below is the final Mantra render.
 Let's get into the breakdown:
 
 ## Head and Body
-I began with primitive spheres and added noise to make the shape more organic. 
+I began with primitive spheres and added noise to make the shape more organic. Remeshing the head and body into triangles also made the connection between the two spheres seem more natural. 
 
 <img height="400" alt="headbody" src="/head_body.png">
 
 ## Abdomen 
-Working off of Houdini Playground techniques, I used a for-loop to create the bee abdomen. First, I created the shape of one section of the abdomen by modifying a torus. I then used Houdini's loop nodes to duplicate the shape and stack them on top of each other, creating the full abdomen. The overall structure was created by bending and tapering the duplicated toruses. 
+Working off of Houdini Playground techniques, I used a for-loop to create the bee abdomen. 
+
+First, I created the shape of one section of the abdomen by modifying a torus. 
+
+I then used Houdini's loop nodes to duplicate the shape and stack them on top of each other, creating the full abdomen. The overall structure was created by bending and tapering the duplicated toruses. 
 
 <img height="400" alt="butt" src="/bee_butt.png">
 
@@ -23,6 +27,7 @@ Working off of Houdini Playground techniques, I used a for-loop to create the be
 
 ## Legs
 The legs were created using a combination of VEX and geometric modeling (oops). To get the shape of the first two segments of the legs, I ended up modifying the vertices of a tube. 
+
 However, I did use VEX to create the more jagged shape of the legs' bottom section. I tried replicating a sawtooth function in VEX to create the shape of the leg, before revolving it to make it three-dimensional. 
 
 The legs were then mirrored and duplicated, with slight variations between the front, middle, and hind legs. 
@@ -40,6 +45,7 @@ I first created the base wing by bending a primitive circle. After remeshing it,
 
 ## Hair
 The bee has hair on its head, body, abdomen, and legs. The general method for generating each is the same: calculate normals for the mesh, scatter points on the mesh, copy a hair mesh (bent, polywired line) to each of the points. 
+
 The bee's abdomen hair has a slight detail: the bee's abdomen has more hair closer to the body, and fewer hairs on the stinger side. This was done using a distance to geometry node, in which points are more likely to be scattered on the parts of the mesh that are closer to the bee's body. 
 
 **Jellyfish Parallel**: The jellyfish tentacles similarly use lines that copy to points on the mesh.  
@@ -50,7 +56,9 @@ The bee's abdomen hair has a slight detail: the bee's abdomen has more hair clos
 ## Animation (just the wings-for now) 
 I added a simple animation for the flapping of the wings. 
 
-My method is slightly different from Elyssa's. Instead of creating a controller that changes parameter values by keyframe, I specified the animation for the wings directly in a bend node. That is, for the wing's bend angle, I added $F (the current frame number) as a function of cosine. This makes the wing's position change sinusoidally with the frames. Since the animation displaces the wing angle, I also added a switch node that allows the user to toggle the animation on and off, returning the bee's wings to the original position. 
+My method is slightly different from Elyssa's. 
+
+Instead of creating a controller that changes parameter values by keyframe, I specified the animation for the wings directly in a bend node. That is, for the wing's bend angle, I added $F (the current frame number) as a function of cosine. This makes the wing's position change sinusoidally with the frames. Since the animation displaces the wing angle, I also added a switch node that allows the user to toggle the animation on and off, returning the bee's wings to the original position. 
 
 **Jellyfish Parallel**: Like the jellyfish, my bee moves yay. 
 
