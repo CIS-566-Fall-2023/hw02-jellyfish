@@ -4,6 +4,7 @@
 In this homework, I made a procedural jellyfish using Houdini. This utilized various procedural modeling and simulation techniques to create a bell, arms, organs, veins, and tentacles. 
 
 ### Final Animated Videos/GIFs
+<img width="800" alt="ColoredWithBGGif" src="/colored-env-light.gif">
 <img width="800" alt="ColoredGif" src="/colored-v2.gif">
 <img width="800" alt="UncoloredGif" src="/uncolored.gif">
 
