@@ -1,0 +1,5 @@
+*.hip
+*.pic
+backup/*
+geo/*
+ipr/*
