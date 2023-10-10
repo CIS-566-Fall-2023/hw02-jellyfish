@@ -60,6 +60,8 @@ My method is slightly different from Elyssa's.
 
 Instead of creating a controller that changes parameter values by keyframe, I specified the animation for the wings directly in a bend node. That is, for the wing's bend angle, I added $F (the current frame number) as a function of cosine. This makes the wing's position change sinusoidally with the frames. Since the animation displaces the wing angle, I also added a switch node that allows the user to toggle the animation on and off, returning the bee's wings to the original position. 
 
+I was too lazy to render the animation oops. 
+
 **Jellyfish Parallel**: Like the jellyfish, my bee moves yay. 
 
 <img width="600" alt="beegif" src="/bee.gif">
