@@ -46,7 +46,7 @@ I first created the base wing by bending a primitive circle. After remeshing it,
 ## Hair
 The bee has hair on its head, body, abdomen, and legs. The general method for generating each is the same: calculate normals for the mesh, scatter points on the mesh, copy a hair mesh (bent, polywired line) to each of the points. 
 
-The bee's abdomen hair has a slight detail: the bee's abdomen has more hair closer to the body, and fewer hairs on the stinger side. This was done using a distance to geometry node, in which points are more likely to be scattered on the parts of the mesh that are closer to the bee's body. 
+The bee's abdomen hair has a slight detail: the bee's abdomen has more hair closer to the body, and fewer hairs on the stinger side. This was done using a distance to geometry node, in which points are more likely to be scattered on the parts of the mesh that are closer to the bee's body. If I circle back on this project, I'll try to delete the points that scatter inside the abdomen, since it's currently creating hairs that are never seen. 
 
 **Jellyfish Parallel**: The jellyfish tentacles similarly use lines that copy to points on the mesh.  
 
