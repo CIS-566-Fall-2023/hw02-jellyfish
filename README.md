@@ -10,7 +10,7 @@ I really enjoyed this project. During my internship last summer, I used Houdini 
 
 ## Reference
 
-<img src="reference.png" width="40%">
+<img src="reference.png" width="100%">
 
 Looking at reference helped me get a feel for what to prioritize. I noticed that there was quite a bit of variety across jellyfish species, so I looked for elements whose variation was within a sizeable enough scope to procedurally reproduce. I also looked at jellyfish swimming videos to guide my final animation.
 
