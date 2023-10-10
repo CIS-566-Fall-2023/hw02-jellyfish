@@ -5,7 +5,7 @@ The goal of the project was to create an animated jellyfish using procedural mod
 <br>
 
 https://github.com/CIIINDYXUU/hw02-jellyfish/assets/88256581/241c608e-741e-4fe0-8ce5-9c37d05402e2
-
+The video is currently not working and I'm not sure why! Worst case scenario, to see it you could git clone my repo and see the file that way? Sorry!
 <br>
 <br>
 The jellyfish contains 5 main parts: the bell, the arms, inner organs, veins, and tentacles.
