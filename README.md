@@ -8,19 +8,19 @@ https://github.com/sherryli02/hw02-jellyfish/assets/97941858/b4e9bafa-61ce-494b-
 
 I really enjoyed this project. During my internship last summer, I used Houdini for the first time, which had been exciting but also overwhelming — I’d never worked with a node-based program before, and there was a lot to wrap my head around. This project gave me some more time to flesh out that knowledge, and I really appreciated the opportunity to learn without feeling entirely lost.
 
+## Process
+
 ## Reference
 
 <img src="reference.png" width="100%">
 
-Looking at reference helped me get a feel for what to prioritize. I noticed that there was quite a bit of variety across jellyfish species, so I looked for elements whose variation was within a sizeable enough scope to procedurally reproduce. I also looked at jellyfish swimming videos to guide my final animation.
+Looking at reference helped me get a feel for what to prioritize in terms of proceduralism. I noticed that there was quite a bit of variety across jellyfish species, so I looked for elements whose variation was within a sizeable enough scope to procedurally reproduce, which ended up being the bell spots and stripes. I also looked at jellyfish swimming videos to guide my final animation.
 
 ## Bell
 
 <img src="bell.png" width="40%">
 
-The main shape of the bell was created by revolving a curve around the y-axis. The user can transform the shape of the bell by controlling the bends of the original curve or by using a taper/squish node, and can also control its overall orientation. 
-
-By copying the original curve and using a distancefrom node with some Vex to displace points in the x and z directions, I added puckered scalloped edges to the bell of the jellyfish. 
+The main shape of the bell was created by revolving a curve around the y-axis, and then transformed through a taper/squish node. By copying the original curve and using a distancefrom node with some Vex to displace points in the x and z directions, I added puckered scalloped edges to the bell of the jellyfish. 
 
 From reference, I observed that jellyfish bells seemed to have both an outer transulcent hood and a more opaque interior wall. Thus, I duplicated and transformed the bell with Vex to get a non-extruded and shorter version of the bell. This helped create a more realistic appearance in the render.
 
@@ -30,7 +30,7 @@ From reference, I observed that jellyfish bells seemed to have both an outer tra
 
 My initial approach was to procedurally generate a map that I could pass into the material shader for the bell using the Cd attribute. After some time I pivoted to modelling the stripes instead, an easier approach.
 
-From observing references, I observed that there was a lot of variation in the stripes on different jellyfish: some widened in the middle, and others tapered off at the end. Thus, I used a sweep node to create the base shape to allow the shapes of the stripes to be totally controllable. To have the stripes perfectly emulate the shape of the bell, I extruded them outwards and used a boolean intersect. I also added some noise to their positions and displaced them such that the stripes would be placed right beneath the skin of the bell.
+From looking at reference, I observed that there was a lot of variation in the stripes on different jellyfish. Some widened in the middle, and others tapered off at the end. Thus, I used a sweep node to create the base shape to allow the shapes of the stripes to be totally controllable. To have the stripes perfectly emulate the shape of the bell, I extruded them outwards and used a boolean intersect. I also added some noise to their positions and displaced them such that the stripes would be placed right beneath the skin of the bell.
 
 ## Bell Spots
 
@@ -54,13 +54,13 @@ I used a torus, box, and and boolean subtract node to get the main U-shape. I th
 
 <img src="arms.png" width="40%">
 
-Using line, bend, and merge nodes, I create a sort of rounded plane to emulate the shape of an arm. I bent and mirrored the plane to get an indented V-shape. Using sin functions in Vex, I displaced the positions of edges of the arm in a ruffle-like manner. I then copied them, added noise, and put them through a cloth vellum simulation. 
+Using line, bend, and merge nodes, I create a sort of tapered plane to emulate the shape of an arm. I bent and mirrored the plane to get an indented V-shape. Using sin functions in Vex, I displaced the positions of edges of the arm in a ruffle-like manner. I then copied them, added noise, and put them through a cloth vellum simulation. 
 
 ## Tentacles
 
 <img src="tentacles.png" width="40%">
 
-By using a group node, I isolated the edges at the bottom of the bell, and then used a grouppromote to convert the edges to points. I then used a pointgenerate node to control the number of points. Then I copied a line to each point, added noise through Vex, and ran them through a hair vellum simulation. 
+By using a group node, I isolated the edges at the bottom of the bell, and then used a grouppromote node to convert the edges to points. I then used a pointgenerate node to control the number of points I wanted to create. Then I copied a line to each point, added noise through Vex, ran them through a hair vellum simulation, and extruded them. 
 
 ## Controller
 
