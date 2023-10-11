@@ -1,3 +1,3 @@
 # Procedural Jellyfish in Houdini
 
-WIP
+![](captures/finalrender.gif)
