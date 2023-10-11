@@ -1,6 +1,6 @@
 # Procedural Jellyfish Project
 
-Note: I used a late day on this!
+Note: I used a late day on this! Also, I do not see a place to submit my Houdini files on Canvas, so I just updated my README and made a PR.
 
 ## Procedural Jellyfish Project
 In this project, I set out to create a procedural jellyfish using Houdini! I learned so much about procedural graphpics and Houdini through this process and am excited to create more exciting works in the future! I ended up having a lot of technical issues with my computer crashing and Houdini refusing to launch, but hopefully with more practice I'll be able to get through these hurdles faster too :)
