@@ -1,7 +1,8 @@
 # Procedural Jellyfish
 
-![image](https://github.com/RachelDLin/hw02-jellyfish/assets/43388455/a96c8176-874e-4e8f-8a02-205d775c597c)
-![Screenshot 2023-10-11 000232](https://github.com/RachelDLin/hw02-jellyfish/assets/43388455/68439d59-62e0-4315-915a-201af41b967e)
+
+https://github.com/RachelDLin/hw02-jellyfish/assets/43388455/e178aca1-f476-4237-acb4-d2023866a048
+
 ![Screenshot 2023-10-11 000221](https://github.com/RachelDLin/hw02-jellyfish/assets/43388455/486e8f96-a1ca-4f95-bf27-cbbafe9c976a)
 
 
