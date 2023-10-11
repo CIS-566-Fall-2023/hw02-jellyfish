@@ -1,11 +1,10 @@
 # Procedural Jellyfish
 
-![](https://github.com/Diana-ou/hw01-fireball/blob/master/calcifer%20gif.gif)
-
-[Live Demo Link] (https://diana-ou.github.io/hw01-fireball/)
+[see the HIP file here!] (https://drive.google.com/file/d/1OJE3G5J6TwUa0AFRf9qrRIE1JXpcrs3Z/view?usp=sharing)
+![Video Demo](https://drive.google.com/file/d/1HzRkZeabLmmwkA_GAhiIFzLpTP8KAu1-/view?usp=sharing)
 
 ## Objective
-- Learn how to use Houdini for the first time
+- Learn basics on how to use Houdini for the first time
 
 ## Inspiration
 I was inspired by plush toys, and wanted to try making the jelly plush-style!
