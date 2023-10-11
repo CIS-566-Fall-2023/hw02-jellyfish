@@ -3,7 +3,7 @@
 This is my first time trying out procedural modelling and animation in Houdini. This fun little project was a good warm-up exercise to get acquainted with the tools and functionalities that Houdini has to offer. My final rudimentary output looks something like this:
 ![](captures/finalrender.gif)
 
-I followed the following sequence while modelling the Jellyfish:
+Some more stills at the end of this README. I followed the following sequence while modelling the Jellyfish:
 
 ## 1. Bell
 
@@ -51,3 +51,8 @@ The last bit of the puzzle were the tentacles. For this, I selected the points o
 1. Vellum Cloth simulation node was used for the Jellyfish's arms.
 2. Vellum Hair simulation node was used for the Jellyfish's tentacles.
 3. I added POP Force and Attract to the tentacles' solver node to give the hair some variation.
+
+
+## Final Result
+
+<img src="captures/final1.png" width=350>  <img src="captures/final2.png" width=350>  <img src="captures/final3.png" width=350>
