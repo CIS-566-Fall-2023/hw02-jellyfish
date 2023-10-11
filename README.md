@@ -7,7 +7,7 @@ In this project, I set out to create a procedural jellyfish using Houdini! I lea
 
 The finished product:
 
-<img width="300" alt="Final Jellyfish" src="/assets/Final.avi">
+<img width="300" alt="Final Jellyfish" src="/assets/Final.mp4">
 
 Now let's dive into how I did it!
 My jellyfish has 5 major components:
