@@ -4,6 +4,8 @@ Created all in Houdini, this project seeks to recreate an animated jellyfish usi
 Final Render:
 <img width="1041" alt="image" src="https://github.com/xcupsilon/hw02-jellyfish/assets/50472308/2264e17a-0f34-44bf-aead-4121d2e43808">
 
+Using a late day and one day extension
+
 ## Project Overview
 In this homework, you'll create a procedural jellyfish using Houdini. This will give you a chance to dig into procedural modeling, as well as some simulation. Here is a breakdown of the different jellyfish parts you'll be putting together:
 
