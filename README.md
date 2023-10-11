@@ -9,6 +9,8 @@ The finished product:
 
 <img width="300" alt="Final Jellyfish" src="/assets/Final.mp4">
 
+[Google Drive video link](https://drive.google.com/file/d/1hY8OcFfnATgumvt7NZdxIK_choXAFDTW/view?usp=drive_link)
+
 Now let's dive into how I did it!
 My jellyfish has 5 major components:
 - Bell
