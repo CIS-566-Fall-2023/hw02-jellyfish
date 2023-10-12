@@ -1,5 +1,5 @@
 # Procedural Jellyfish
-<a href="[https://www.google.com/](https://youtu.be/d2GTRQGMLEA)" target="_blank">Video Demo</a>
+<a href="https://youtu.be/d2GTRQGMLEA" target="_blank">Video Demo</a>
 
 Created all in Houdini, this project seeks to recreate an animated jellyfish using procedural workflows.
 
