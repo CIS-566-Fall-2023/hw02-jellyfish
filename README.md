@@ -1,7 +1,7 @@
 # Procedural Jellyfish
 
 [see the HIP file here!] (https://drive.google.com/file/d/1OJE3G5J6TwUa0AFRf9qrRIE1JXpcrs3Z/view?usp=sharing)
-![Video Demo](https://drive.google.com/file/d/1HzRkZeabLmmwkA_GAhiIFzLpTP8KAu1-/view?usp=sharing)
+[Video Demo](https://drive.google.com/file/d/1HzRkZeabLmmwkA_GAhiIFzLpTP8KAu1-/view?usp=sharing)
 
 ## Objective
 - Learn basics on how to use Houdini for the first time
