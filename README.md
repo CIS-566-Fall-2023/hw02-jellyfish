@@ -64,6 +64,11 @@ Your goal is to create tentacles that look like this for your jellyfish:
 
 Your task is to watch the video and extract the applicable information to make the tentacles! (also, just a heads up, the second half of the tutorial is all irrelevant rendering stuff in C4D, so you only need to watch the first 12 minutes or so).
 
+## Houdini FAQ
+File Cache Node - How do I use the File Cache node? Where does it save and how do versions work?
+
+Simulation Caching - Why is my timeline turning blue/orange? Why isn't my simulation updating even though I made changes?
+
 ## (Optional) Extra Credit
 - Add another part to your jellyfish. This can be something real (ex: crown jellyfish and lions mane jellyfish have some pretty crazy features that might be fun to recreate) or whatever zany alien jellyfish addition you can imagine!
 - Refine one of the existing parts (ex: adding scalloped edges and dents/puckering to the bell of the jellyfish)
