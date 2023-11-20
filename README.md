@@ -2,7 +2,9 @@
 <img width="1000" alt="FinalModel1" src="/assets/final_bottom_view.png">
 <img width="1000" alt="FinalModel2" src="/assets/final_top_view.png">
 
-(More animation and rendering to come)
+### Animation:
+
+<img width="1000" alt="FinalDemo" src="/assets/final-demo.gif">
 
 ## Project Overview
 I created a procedural jellyfish using Houdini. The focus of this project is to dig into procedural modeling, as well as some physical simulation. Below is a breakdown of how I implemented the different jellyfish parts using node network.
