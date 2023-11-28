@@ -3,6 +3,7 @@
 
 ### Final Rendered Image
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitl3222341.pic.jpeg)
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled01.jpeg)
 
 ### Veins
 ![]()
