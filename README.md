@@ -1,7 +1,21 @@
 # Procedural Jellyfish
 ## Keyu Lu Submission
-Final Rendered Image
+
+### Final Rendered Image
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitl3222341.pic.jpeg)
+
+### Veins
+![]()
+
+### Organs
+![]()
+
+### Tentacles
+![]()
+
+### 
+
+
 
 ## Project Overview
 In this homework, you'll create a procedural jellyfish using Houdini. This will give you a chance to dig into procedural modeling, as well as some simulation. Here is a breakdown of the different jellyfish parts you'll be putting together:
