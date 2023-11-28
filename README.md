@@ -6,7 +6,7 @@
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled01.jpeg)
 
 ### Veins
-![]()
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled31.pic.jpg)
 
 ### Organs
 ![]()
