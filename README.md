@@ -14,6 +14,12 @@
 ### Tentacles
 ![]()
 
+### Bell
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled333222341.pic.jpeg)
+
+### Arms
+![]()
+
 ### Procedural Jelly Fish without Texture
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled1.jpg)
 
