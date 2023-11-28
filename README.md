@@ -18,7 +18,7 @@
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled333222341.pic.jpeg)
 
 ### Arms
-![]()
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled33322341.pic.jpeg)
 
 ### Procedural Jelly Fish without Texture
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled1.jpg)
