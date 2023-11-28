@@ -12,7 +12,7 @@
 ![]()
 
 ### Tentacles
-![]()
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled333341.pic.jpeg)
 
 ### Bell
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled333222341.pic.jpeg)
