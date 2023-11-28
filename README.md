@@ -14,7 +14,8 @@
 ### Tentacles
 ![]()
 
-### 
+### Procedural Jelly Fish without Texture
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled1.jpg)
 
 
 
