@@ -9,7 +9,7 @@
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled31.pic.jpg)
 
 ### Organs
-![]()
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled3341.pic.jpeg)
 
 ### Tentacles
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled333341.pic.jpeg)
