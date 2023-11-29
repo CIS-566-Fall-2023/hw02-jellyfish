@@ -12,7 +12,7 @@
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled01.jpeg)
 
 ### Veins
-![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20veins.pic.jpeg)
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20vein.pic.jpeg)
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled31.pic.jpg)
 
 ### Organs
