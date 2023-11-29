@@ -4,7 +4,7 @@
 ### Animated Result with Lighting
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/Jellyfish%20Fast%20mp4.gif)
 ### Final Rendered Image with Material and Lighting
-![]()
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20light%20final.pic.jpeg)
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20light%20final%20angled.pic.jpeg)
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitl3222341.pic.jpeg)
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled01.jpeg)
