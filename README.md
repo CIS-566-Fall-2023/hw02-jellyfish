@@ -12,18 +12,22 @@
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled01.jpeg)
 
 ### Veins
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20veins.pic.jpeg)
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled31.pic.jpg)
 
 ### Organs
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled3341.pic.jpeg)
 
 ### Tentacles
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20tentacles.pic.jpeg)
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled333341.pic.jpeg)
 
 ### Bell
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20bell.pic.jpeg)
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled333222341.pic.jpeg)
 
 ### Arms
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20arms.pic.jpeg)
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled33322341.pic.jpeg)
 
 ### Procedural Jellyfish without Material
