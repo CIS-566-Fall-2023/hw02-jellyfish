@@ -25,6 +25,7 @@
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled33322341.pic.jpeg)
 
 ### Procedural Jellyfish
+![]()
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled1.jpg)
 
 ### My Approach
