@@ -16,6 +16,7 @@
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled31.pic.jpg)
 
 ### Organs
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20organs.pic.jpeg)
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled3341.pic.jpeg)
 
 ### Tentacles
