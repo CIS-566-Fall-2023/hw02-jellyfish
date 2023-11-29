@@ -8,6 +8,7 @@
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20light%20final%20angled.pic.jpeg)
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitl3222341.pic.jpeg)
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled01.jpeg)
+![]()
 
 ### Veins
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled31.pic.jpg)
@@ -24,8 +25,8 @@
 ### Arms
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled33322341.pic.jpeg)
 
-### Procedural Jellyfish
-With Lighting but no material:
+### Procedural Jellyfish without Material
+With Lighting:
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20light777.pic.jpeg)
 Without Lighting: 
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled1.jpg)
