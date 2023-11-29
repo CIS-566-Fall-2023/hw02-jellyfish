@@ -25,7 +25,9 @@
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled33322341.pic.jpeg)
 
 ### Procedural Jellyfish
-![]()
+With Lighting but no material:
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20light777.pic.jpeg)
+Without Lighting: 
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled1.jpg)
 
 ### My Approach
