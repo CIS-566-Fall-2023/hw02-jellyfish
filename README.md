@@ -1,6 +1,8 @@
 # Procedural Jellyfish
 ## Keyu Lu Submission
 
+### Animated Result with Lighting
+[![Animated Rendered Result]()](https://www.youtube.com/watch?v=0SG2_HbRFLM)
 ### Final Rendered Image with Material and Lighting
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitl3222341.pic.jpeg)
 ![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled01.jpeg)
