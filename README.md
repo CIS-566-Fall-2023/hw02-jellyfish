@@ -1,4 +1,45 @@
 # Procedural Jellyfish
+## Keyu Lu Submission
+
+### Animated Result with Lighting
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/Jellyfish%20Fast%20mp4.gif)
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/video-output-32478F17-1C8D-4D60-B168-FB6BA14AA62F.gif)
+### Final Rendered Image with Material and Lighting
+#### Material and Lighting 1:
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20light%20final.pic.jpeg)
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20light%20final%20angled.pic.jpeg)
+#### Material and Lighting 2:
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitl3222341.pic.jpeg)
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled01.jpeg)
+
+### Veins
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20vein.pic.jpeg)
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled31.pic.jpg)
+
+### Organs
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20organs.pic.jpeg)
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled3341.pic.jpeg)
+
+### Tentacles
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20tentacles.pic.jpeg)
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled333341.pic.jpeg)
+
+### Bell
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20bell.pic.jpeg)
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled333222341.pic.jpeg)
+
+### Arms
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20arms.pic.jpeg)
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled33322341.pic.jpeg)
+
+### Procedural Jellyfish without Material
+With Lighting:
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/jellyfish%20light777.pic.jpeg)
+Without Lighting: 
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/untitled1.jpg)
+
+### My Approach
+![](https://github.com/uluyek/hw02-jellyfish/blob/main/approach.png)
 
 ## Project Overview
 In this homework, you'll create a procedural jellyfish using Houdini. This will give you a chance to dig into procedural modeling, as well as some simulation. Here is a breakdown of the different jellyfish parts you'll be putting together:
