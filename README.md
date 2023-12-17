@@ -1,6 +1,6 @@
 # Procedural Jellyfish
 
-https://github.com/sherryli02/hw02-jellyfish/assets/97941858/13abc34a-2956-4f7d-ae6a-cd454ae55389
+https://github.com/sherryli02/hw02-jellyfish/assets/97941858/daf2e23b-eecf-4e1b-8a97-7d3dc98679b6
 
 Something I particularly wanted to achieve with my jellyfish was not only have many detailed parameters for an artist to be able to fine-tune, but also the ability to quickly generate endless random jellyfish variations. I achieved this by adding a “Randomize” toggle to my controller — if the user checks it, they can scrub through a seed that randomizes dozens of parameters independently!
 
